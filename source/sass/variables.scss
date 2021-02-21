@@ -10,5 +10,37 @@ $desktop-width-only: 1024px;
 $desktop-width-max: 1200px;
 
 // Descriptive variables for colors
+$black: #1b2d37;
+// $black-light:#203c42;
+
+$grey-darken: #666666;
+// $grey-dark: #788891;
+// $grey: #cdcdcd;
+// $grey-light: #ebebeb;
+// $grey-lighten: #f2f2f2;
+// $grey-lightest: #fafafa;
+
+$white: #ffffff;
+$accent: #00b2ff;
+// $error: #ff0000;
 
 // Function variables for colors
+$page_text: $grey-darken;
+$page_bg: $white;
+
+$page-header_bg: $black;
+
+$contacts_text: $white;
+$contacts_text-hover: $accent;
+
+$btn_border: $white;
+$btn_border-hover: $accent;
+$btn_bg: $accent;
+$btn_bg-hover: $white;
+$btn_text: $white;
+$btn_text-hover: $accent;
+
+$promo_text: $white;
+$promo_pseudo: $white;
+$promo_scroll: rgba($white, 0.5);
+$promo_scroll-hover: rgba($white, 0.3);
