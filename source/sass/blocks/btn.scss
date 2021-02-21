@@ -73,18 +73,33 @@
       opacity: 0.5;
     }
   }
-}
 
-.btn__text--desktop {
-  @media (max-width: $mobile-width) {
-    display: none;
+  &--about-company {
+    color: $btn_text-about-company;
+
+    border-color: $btn_border-about-company;
+
+    &:hover,
+    &:focus {
+      color: $btn_text-about-company-hover;
+
+      background-color: $btn_bg-about-company-hover;
+    }
   }
 }
 
-.btn__text--mobile {
-  display: none;
+.btn__text {
+  &--desktop {
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
 
-  @media (max-width: $mobile-width) {
-    display: block;
+  &--mobile {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
   }
 }

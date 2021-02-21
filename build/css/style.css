@@ -430,6 +430,12 @@ img {
       background-color: #ffffff; }
     .btn--promo:active {
       opacity: 0.5; }
+  .btn--about-company {
+    color: #00b2ff;
+    border-color: #00b2ff; }
+    .btn--about-company:hover, .btn--about-company:focus {
+      color: #ffffff;
+      background-color: #00b2ff; }
 
 @media (max-width: 767px) {
   .btn__text--desktop {
@@ -735,6 +741,11 @@ img {
         width: 301px;
         height: 220px; } }
 
+.page-main {
+  background-image: url("../img/icon-bg-page-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .advantages {
   padding-top: 112px;
   padding-bottom: 55px; }
@@ -821,3 +832,79 @@ img {
   .advantages__icon {
     width: 32px;
     height: 32px; } }
+
+.about-company {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 110px; }
+  @media (max-width: 1023px) {
+    .about-company {
+      padding-top: 26px;
+      padding-bottom: 85px; } }
+  @media (max-width: 767px) {
+    .about-company {
+      padding-bottom: 63px; } }
+  .about-company img {
+    position: absolute;
+    top: 4px;
+    left: -9px;
+    display: block;
+    width: 217px;
+    height: 319px; }
+    @media (max-width: 1023px) {
+      .about-company img {
+        top: -2px;
+        left: 1px;
+        width: 240px;
+        height: 362px; } }
+    @media (max-width: 767px) {
+      .about-company img {
+        display: none; } }
+  .about-company h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: "Roboto Condensed", "Tahoma", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px; }
+    @media (max-width: 1023px) {
+      .about-company h2 {
+        margin-bottom: 25px;
+        font-size: 32px;
+        line-height: 140.62%; } }
+    @media (max-width: 767px) {
+      .about-company h2 {
+        margin-bottom: 21px;
+        font-size: 28px; } }
+  .about-company p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 21px;
+    padding-right: 5px; }
+    @media (max-width: 1023px) {
+      .about-company p {
+        padding-right: 0; } }
+    @media (max-width: 1023px) {
+      .about-company p {
+        margin-bottom: 40px; } }
+  @media (max-width: 1023px) {
+    .about-company span {
+      display: none; } }
+
+.about-company__container {
+  position: relative;
+  padding-left: 195px; }
+  @media (max-width: 1023px) {
+    .about-company__container {
+      padding-left: 212px; } }
+  @media (max-width: 767px) {
+    .about-company__container {
+      padding-left: 15px; } }
+
+.about-company__btn {
+  margin-top: 39px; }
+  @media (max-width: 767px) {
+    .about-company__btn {
+      margin-top: -10px; } }
