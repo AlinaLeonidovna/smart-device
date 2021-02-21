@@ -149,35 +149,35 @@
     height: 220px;
   }
 
-  &::before {
-    @include pseudo();
-    top: -9%;
-    left: -4%;
+  // &::before {
+  //   @include pseudo();
+  //   top: -9%;
+  //   left: -4%;
 
-    width: 638px;
-    height: 638px;
+  //   width: 638px;
+  //   height: 638px;
 
-    background-image: url("../../img/icon-triangles.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  //   background-image: url("../../img/icon-triangles.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
 
-    @media (max-width: $tablet-width) {
-      top: -44%;
-      left: -12%;
+  //   @media (max-width: $tablet-width) {
+  //     top: -44%;
+  //     left: -12%;
 
-      width: 505px;
-      height: 505px;
-    }
+  //     width: 505px;
+  //     height: 505px;
+  //   }
 
-    @media (max-width: $mobile-width) {
-      top: -63%;
-      left: 46%;
+  //   @media (max-width: $mobile-width) {
+  //     top: -63%;
+  //     left: 46%;
 
-      width: 483px;
-      height: 483px;
-    }
-  }
+  //     width: 483px;
+  //     height: 483px;
+  //   }
+  // }
 
   img {
     position: relative;

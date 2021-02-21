@@ -16,7 +16,7 @@ $black: #1b2d37;
 $grey-darken: #666666;
 // $grey-dark: #788891;
 // $grey: #cdcdcd;
-// $grey-light: #ebebeb;
+$grey-light: #ebebeb;
 // $grey-lighten: #f2f2f2;
 // $grey-lightest: #fafafa;
 
@@ -44,3 +44,13 @@ $promo_text: $white;
 $promo_pseudo: $white;
 $promo_scroll: rgba($white, 0.5);
 $promo_scroll-hover: rgba($white, 0.3);
+
+$advantages_border: $grey-light;
+$advantages_border-hover: $accent;
+$advantages_border-left: $accent;
+$advantages_item-bg: $white;
+$advantages_item-bg-hover: $accent;
+$advantages_title: $accent;
+$advantages_text-hover: $white;
+$advantages_icon: $accent;
+$advantages_icon-hover: $white;
