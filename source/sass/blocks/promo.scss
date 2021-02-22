@@ -104,12 +104,14 @@
 
 .promo__scroll {
   display: block;
+  width: min-content;
   margin-top: 186px;
   margin-left: 3px;
 
   font-size: 14px;
   line-height: 16px;
   color: $promo_scroll;
+  white-space: nowrap;
 
   transform: rotate(-90deg);
   transform-origin: 0 0;
