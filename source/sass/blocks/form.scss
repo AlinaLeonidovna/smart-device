@@ -1,0 +1,127 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 40px;
+
+  color: $form_text;
+
+  background-color: transparent;
+
+  @media (max-width: $tablet-width) {
+    column-gap: 32px;
+    row-gap: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+.form__input {
+  &--textarea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    @media (max-width: $mobile-width) {
+      grid-column-end: 2;
+    }
+  }
+}
+
+.form__input input,
+.form__input textarea {
+  width: 100%;
+  padding: 14px 16px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $form_text;
+
+  border: none;
+  background-color: $form_input-bg;
+  outline: none;
+
+  resize: none;
+
+  &::placeholder {
+    color: $form_input-placeholder;
+  }
+
+  &:hover,
+  &:focus {
+    padding: 13px 15px;
+
+    border: 1px solid $white;
+  }
+}
+
+.form__input textarea {
+  height: 155px;
+
+  @media (max-width: $tablet-width) {
+    height: 160px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 104px;
+  }
+}
+
+.form__checkbox {
+  padding-top: 6px;
+  padding-left: 10px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $form_checkbox;
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+}
+
+.form__checkbox label {
+  position: relative;
+
+  display: block;
+  padding-left: 34px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__checkbox input + label::before {
+  @include pseudo();
+
+  left: 0;
+  top: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid $form_checkbox-border;
+}
+
+.form__checkbox input:checked + label::after {
+  @include pseudo();
+
+  top: 6px;
+  left: 4px;
+
+  width: 8px;
+  height: 5px;
+
+  background-image: url("../../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__checkbox input:hover + label::before,
+.form__checkbox input:focus + label::before {
+  outline: 1px solid $form_checkbox-border;
+}

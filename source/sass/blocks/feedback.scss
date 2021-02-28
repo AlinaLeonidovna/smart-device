@@ -1,0 +1,137 @@
+.feedback {
+  position: relative;
+
+  padding-top: 90px;
+  padding-bottom: 110px;
+
+  background-color: $feedback_bg;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 103px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+    padding-bottom: 43px;
+  }
+
+  &::before {
+    @include pseudo();
+
+    top: 35px;
+    right: 0;
+
+    width: 364px;
+    height: 670px;
+
+    background-image: url("../../img/icon-bg-feedback-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.feedback__container {
+  display: flex;
+}
+
+.feedback__img {
+  position: relative;
+  z-index: 1;
+
+  width: 51%;
+  margin-left: -24px;
+  margin-right: 24px;
+  padding-top: 71px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &::before {
+    @include pseudo();
+
+    top: -270px;
+    left: -1205px;
+
+    width: 1920px;
+    height: 881px;
+
+    background-image: url("../../img/icon-triangles.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.feedback__img img {
+  display: block;
+}
+
+.feedback__text {
+  position: relative;
+  z-index: 1;
+
+  width: 49%;
+  min-width: 570px;
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    min-width: auto;
+    margin: 0 auto;
+    padding: 0 67px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+}
+
+.feedback__text h2 {
+  @include text-reset;
+
+  margin-bottom: 10px;
+
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $feedback_text;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 16px;
+
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 13px;
+
+    font-size: 28px;
+  }
+}
+
+.feedback__text p {
+  @include text-reset;
+
+  margin-bottom: 50px;
+
+  color: $feedback_text;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 25px;
+  }
+}

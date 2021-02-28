@@ -13,6 +13,7 @@ $desktop-width-max: 1200px;
 $black: #1b2d37;
 // $black-light:#203c42;
 
+$grey-darkest: #626962;
 $grey-darken: #666666;
 // $grey-dark: #788891;
 // $grey: #cdcdcd;
@@ -61,3 +62,19 @@ $advantages_icon-hover: $white;
 
 $services_bg: $black;
 $services_text: $white;
+
+$feedback_bg: $accent;
+$feedback_text: $white;
+
+$form_text: $white;
+$form_input-bg: rgba($white, 0.1);
+$form_input-placeholder: $white;
+$form_checkbox: rgba($white, 0.8);
+$form_checkbox-border: $white;
+
+$page-footer_line: rgba($grey-darkest, 0.2);
+$page-footer_link: rgba($black, 0.5);
+$page-footer_link-hover: $black;
+$page-footer_link-active: rgba($black, 0.3);
+$page-footer_text: rgba($black, 0.5);
+$page-footer_title: $black;

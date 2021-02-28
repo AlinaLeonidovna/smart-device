@@ -39,6 +39,7 @@
 
   ul {
     @include list-reset();
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -93,6 +94,7 @@
 
   h3 {
     @include text-reset();
+
     position: absolute;
     top: 50px;
     left: 44px;
@@ -120,6 +122,7 @@
 
   &::before {
     @include pseudo();
+
     z-index: 2;
     right: 0;
     bottom: 0;
@@ -127,7 +130,7 @@
     width: 63px;
     height: 63px;
 
-    background: url("../img/icon-arrow.svg");
+    background-image: url("../img/icon-arrow.svg");
     background-color: $accent;
     background-repeat: no-repeat;
     background-position-x: 31px;
