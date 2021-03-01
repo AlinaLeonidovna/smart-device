@@ -33,16 +33,19 @@
 .page-header__container {
   max-width: 1450px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .page-header__wrap {
   display: flex;
   align-items: center;
-  padding-left: 26px;
-  padding-right: 13px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 11px;
+  }
 
   @media (max-width: $mobile-width) {
-    padding-left: 17px;
+    padding-left: 0;
   }
 }
 

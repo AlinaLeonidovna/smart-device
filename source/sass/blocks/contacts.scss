@@ -62,6 +62,13 @@
 .contacts__icon {
   flex-shrink: 0;
 
+  @media (max-width: $tablet-width) {
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+      opacity: 0.7;
+    }
+  }
+
   &--email {
     width: 19px;
     height: 14px;

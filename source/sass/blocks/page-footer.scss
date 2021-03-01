@@ -140,22 +140,16 @@
 
   a:hover,
   a:focus {
-    svg {
-      fill: $black;
-    }
+    opacity: 0.5;
   }
 
   a:active {
-    svg {
-      opacity: 0.5;
-    }
+    opacity: 1;
   }
 }
 
 .page-footer__nav {
   position: relative;
-
-  padding-right: 45px;
 
   @media (max-width: $tablet-width) {
     grid-column-start: 1;
@@ -201,31 +195,22 @@
 
   ul {
     @include list-reset();
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100px;
 
+    padding-right: 60px;
+
+    column-count: 2;
 
     @media (max-width: $tablet-width) {
-      flex-direction: column;
-      height: auto;
+      column-count: 1;
     }
 
     @media (max-width: $mobile-width) {
       margin-top: 32px;
-      display: none;
     }
   }
 
   li {
-    width: 50%;
     padding-right: 15px;
-    flex-shrink: 0;
-
-    @media (max-width: $tablet-width) {
-      width: 100%;
-    }
 
     @media (max-width: $mobile-width) {
       padding-right: 0;
@@ -247,7 +232,6 @@
     color: $page-footer_link-active;
   }
 }
-
 
 .page-footer__contacts {
   padding-right: 4px;
@@ -411,5 +395,75 @@
 
   @media (max-width: $mobile-width) {
     margin: 0;
+  }
+}
+
+// Accordion
+
+.page-footer__accordion {
+  position: relative;
+}
+
+.page-footer__switch {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 29px;
+    right: 3px;
+
+    display: flex;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+
+    overflow: visible;
+
+    &::before,
+    &::after {
+      @include pseudo();
+      background-color: $page-footer_accordion-btn;
+    }
+
+    &::before {
+      margin-top: 7px;
+      width: 100%;
+      height: 1px;
+    }
+
+    &::after {
+      display: none;
+
+      left: 7px;
+      width: 1px;
+      height: 100%;
+    }
+  }
+}
+
+.page-footer__accordion--close {
+  & ul {
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+}
+
+.page-footer__accordion--close .page-footer__switch::after {
+  display: block;
+}
+
+.page-footer__accordion--no-js .page-footer__switch {
+  display: none;
+}
+
+.page-footer__accordion--no-js {
+  & ul {
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
   }
 }
