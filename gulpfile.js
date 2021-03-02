@@ -36,7 +36,8 @@ gulp.task(`js`, function () {
   return gulp.src([
     `./source/js/accordion.js`,
     `./source/js/modal.js`,
-    `./source/js/mask.js`
+    `./source/js/mask.js`,
+    `./source/js/scroll.js`
   ])
       .pipe(concat(`main.js`))
       .pipe(gulp.dest(`build/js`));
