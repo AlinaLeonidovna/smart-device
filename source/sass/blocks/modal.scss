@@ -1,0 +1,73 @@
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: none;
+
+  background-color: $modal_bg;
+
+  &--open {
+    display: block;
+
+    overflow-y: auto;
+  }
+}
+
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 490px;
+  padding: 35px 40px;
+
+  color: $modal_text;
+
+  background-color: $modal_content-bg;
+}
+
+.modal h2 {
+  @include text-reset;
+
+  margin-bottom: 10px;
+
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140.62%;
+  color: $modal_text;
+}
+
+.modal p {
+  @include text-reset;
+
+  max-width: 90%;
+  margin-bottom: 30px;
+
+  color: $modal_text;
+}
+
+.modal__content > button {
+  @include btn-reset;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 57px;
+  height: 57px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

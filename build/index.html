@@ -41,7 +41,7 @@
               </a>
             </li>
           </ul>
-          <a class="contacts__btn btn btn--contacts" href="#">Заказать звонок</a>
+          <a class="contacts__btn btn btn--contacts" id="modal">Заказать звонок</a>
         </div>
       </div>
       <section class="promo">
@@ -285,7 +285,7 @@
           </button>
           <ul>
             <li>
-              <a href="https://www.google.com/maps/dir/?api=1&destination=%D0%B3.%20%D0%9C%D1%8B%D1%82%D0%B8%D1%89%D0%B8%2C%20%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%20%D0%B4.10" target="_blank" aria-label="Адрес нашей компании">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=%D0%B3.%20%D0%9C%D1%8B%D1%82%D0%B8%D1%89%D0%B8%2C%20%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%20%D0%B4.10" target="_blank" rel="noreferrer" aria-label="Адрес нашей компании">
                 г. Мытищи, Олимпийский проспект, д.10
               </a>
             </li>
@@ -322,6 +322,36 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__content">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="form form--modal" method="post" action="https://echo.htmlacademy.ru">
+        <div class="form__input form__input--name">
+          <label class="visually-hidden" for="modal-name">Ваше имя</label>
+          <input type="text" name="name" id="modal-name" placeholder="Имя" required="">
+        </div>
+        <div class="form__input form__input--tel">
+          <label class="visually-hidden" for="modal-phone">Ваш номер телефона</label>
+          <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" minlength="14" maxlength="14" required="">
+        </div>
+        <div class="form__input form__input--textarea">
+          <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
+          <textarea name="question" id="modal-question" placeholder="Ваш вопрос" rows="6" required=""></textarea>
+        </div>
+        <button class="btn btn--modal" type="submit">Отправить</button>
+        <div class="form__checkbox">
+          <input class="visually-hidden" type="checkbox" name="personal-data" id="modal-personal-data" required="" checked="">
+          <label for="modal-personal-data">Я согласен на обработку персональных данных</label>
+        </div>
+      </form>
+      <button class="modal__btn-close" type="button" aria-label="Закрыть модальное окно">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>

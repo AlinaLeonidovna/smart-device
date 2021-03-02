@@ -102,6 +102,22 @@
       opacity: 0.5;
     }
   }
+
+  &--modal {
+    width: 100%;
+    margin-bottom: 28px;
+    padding: 14px 19px;
+
+    &:hover,
+    &:focus {
+      color: $btn_text-hover;
+      background-color: $btn_bg-hover;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 }
 
 .btn__text {

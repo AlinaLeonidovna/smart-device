@@ -17,6 +17,10 @@
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
+
+  &--modal {
+    display: block;
+  }
 }
 
 .form__input {
@@ -27,6 +31,14 @@
     @media (max-width: $mobile-width) {
       grid-column-end: 2;
     }
+  }
+
+  .form--modal & {
+    margin-bottom: 30px;
+  }
+
+  .form--modal &--textarea {
+    display: flex;
   }
 }
 
@@ -58,6 +70,15 @@
 
     border: 1px solid $white;
   }
+
+  .form--modal & {
+    padding: 14px 25px 17px 25px;
+  }
+
+  .form--modal &:hover,
+  .form--modal &:focus {
+    padding: 13px 24px 16px 24px;
+  }
 }
 
 .form__input textarea {
@@ -69,6 +90,10 @@
 
   @media (max-width: $mobile-width) {
     height: 104px;
+  }
+
+  .form--modal & {
+    height: 105px;
   }
 }
 
@@ -83,6 +108,10 @@
   @media (max-width: $mobile-width) {
     padding: 0;
   }
+
+  .form--modal & {
+    padding-left: 0;
+  }
 }
 
 .form__checkbox label {
@@ -93,6 +122,11 @@
 
   cursor: pointer;
   user-select: none;
+
+  .form--modal & {
+    max-width: 90%;
+    padding-left: 48px;
+  }
 }
 
 .form__checkbox input + label::before {
