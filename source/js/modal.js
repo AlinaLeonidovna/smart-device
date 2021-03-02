@@ -7,7 +7,7 @@
   const modalContent = modal.querySelector(`.modal__content`);
   const modalForm = modal.querySelector(`.form--modal`);
   const modalName = modal.querySelector(`#modal-name`);
-  const modalTel = modal.querySelector(`#moda-phone`);
+  const modalTel = modal.querySelector(`#modal-phone`);
   const modalText = modal.querySelector(`#modal-question`);
   const btnClose = modal.querySelector(`.modal__btn-close`);
 
