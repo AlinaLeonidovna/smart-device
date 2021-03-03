@@ -2,8 +2,8 @@
 
 (() => {
   const body = document.querySelector(`.page`);
-  const linkModal = document.querySelector(`#modal`);
-  const modal = document.querySelector(`.modal`);
+  const linkModal = document.querySelector(`#link-modal`);
+  const modal = document.querySelector(`#modal`);
   const modalContent = modal.querySelector(`.modal__content`);
   const modalForm = modal.querySelector(`.form--modal`);
   const modalName = modal.querySelector(`#modal-name`);
@@ -25,7 +25,7 @@
       isStorageSupport = false;
     }
 
-    linkModal.addEventListener(`click`, (evt) =>{
+    linkModal.addEventListener(`click`, (evt) => {
       evt.preventDefault();
       modal.classList.add(`modal--open`);
       body.classList.add(`page--scroll`);

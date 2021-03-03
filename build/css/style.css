@@ -1341,7 +1341,8 @@ img {
 .page-footer__container {
   max-width: 1450px;
   margin: 0 auto;
-  padding: 0 15px; }
+  padding: 0 15px;
+  overflow-x: hidden; }
   @media (max-width: 1023px) {
     .page-footer__container {
       padding: 0 25px; } }

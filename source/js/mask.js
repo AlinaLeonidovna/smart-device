@@ -5,8 +5,11 @@
   const modalTel = modal.querySelector(`#modal-phone`);
   const feedback = document.querySelector(`.feedback`);
   const feedbackTel = feedback.querySelector(`#feedback-phone`);
-  const template = /^\+7\([0-9]{3}\)[0-9]{7}/;
   const lastLength = 2;
+  const PHONE = {
+    template: /^\+7\([0-9]{3}\)[0-9]{7}/,
+    format: `Пример: +7(9xx)xxxxxxx`
+  };
 
   const inputTelHandler = (evt) => {
     evt.currentTarget.addEventListener(`keypress`, function (e) {
@@ -22,8 +25,8 @@
       evt.currentTarget.value = evt.currentTarget.value.slice(0, -1);
     }
 
-    if (!template.test(evt.currentTarget.value)) {
-      evt.currentTarget.setCustomValidity(`Пример: +7(9xx)xxxxxxx`);
+    if (!PHONE.template.test(evt.currentTarget.value)) {
+      evt.currentTarget.setCustomValidity(PHONE.format);
     } else {
       evt.currentTarget.setCustomValidity(``);
     }

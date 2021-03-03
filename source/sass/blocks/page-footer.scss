@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 0 15px;
 
+  overflow-x: hidden;
+
   @media (max-width: $tablet-width) {
     padding: 0 25px;
   }
