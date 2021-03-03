@@ -12,71 +12,71 @@
   @media (max-width: $mobile-width) {
     padding-bottom: 63px;
   }
+}
 
-  img {
-    position: absolute;
-    top: 4px;
-    left: -9px;
+.about-company img {
+  position: absolute;
+  top: 4px;
+  left: -9px;
 
-    display: block;
-    width: 217px;
-    height: 319px;
+  display: block;
+  width: 217px;
+  height: 319px;
 
-    @media (max-width: $tablet-width) {
-      top: -2px;
-      left: 1px;
+  @media (max-width: $tablet-width) {
+    top: -2px;
+    left: 1px;
 
-      width: 240px;
-      height: 362px;
-    }
-
-    @media (max-width: $mobile-width) {
-      display: none;
-    }
+    width: 240px;
+    height: 362px;
   }
 
-  h2 {
-    @include text-reset();
-    margin-bottom: 20px;
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
 
-    font-family: $title-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 51px;
+.about-company h2 {
+  @include text-reset();
+  margin-bottom: 20px;
 
-    @media (max-width: $tablet-width) {
-      margin-bottom: 25px;
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
 
-      font-size: 32px;
-      line-height: 140.62%;
-    }
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
 
-    @media (max-width: $mobile-width) {
-      margin-bottom: 21px;
-
-      font-size: 28px;
-    }
+    font-size: 32px;
+    line-height: 140.62%;
   }
 
-  p {
-    @include text-reset();
+  @media (max-width: $mobile-width) {
     margin-bottom: 21px;
-    padding-right: 5px;
 
-    @media (max-width: $tablet-width) {
-      padding-right: 0;
-    }
+    font-size: 28px;
+  }
+}
 
-    @media (max-width: $mobile-width) {
-      margin-bottom: 40px;
-    }
+.about-company p {
+  @include text-reset();
+  margin-bottom: 21px;
+  padding-right: 5px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 0;
   }
 
-  span {
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.about-company span {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 

@@ -10,18 +10,18 @@
   @media (max-width: $mobile-width) {
     padding-top: 37px;
   }
+}
 
-  ul {
-    @include list-reset();
+.advantages ul {
+  @include list-reset();
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 
-    @media (max-width: $mobile-width) {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
@@ -64,46 +64,6 @@
     }
   }
 
-  svg {
-    display: block;
-    margin-bottom: 18px;
-
-    fill: $advantages_icon;
-
-    @media (max-width: $tablet-width) {
-      margin-bottom: 10px;
-    }
-
-    @media (max-width: $mobile-width) {
-      margin-bottom: 13px;
-    }
-  }
-
-  h3 {
-    @include text-reset();
-    margin-bottom: 15px;
-
-    font-family: $title-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px;
-    color: $advantages_title;
-
-    @media (max-width: $tablet-width) {
-      margin-bottom: 9px;
-    }
-
-    @media (max-width: $mobile-width) {
-      font-size: 20px;
-      line-height: 140.62%;
-    }
-  }
-
-  p {
-    @include text-reset();
-  }
-
   &--suppliers {
     @media (max-width: $mobile-width) {
       padding-right: 11px;
@@ -111,9 +71,44 @@
   }
 }
 
-.advantages__icon {
+.advantages__item svg {
+  display: block;
+  margin-bottom: 18px;
+
+  fill: $advantages_icon;
+
   @media (max-width: $tablet-width) {
     width: 32px;
     height: 32px;
+    margin-bottom: 10px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 13px;
+  }
+}
+
+.advantages__item h3 {
+  @include text-reset();
+  margin-bottom: 15px;
+
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $advantages_title;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 140.62%;
+  }
+}
+
+.advantages__item p {
+  @include text-reset();
 }
