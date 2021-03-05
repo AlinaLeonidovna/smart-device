@@ -41,7 +41,7 @@
               </a>
             </li>
           </ul>
-          <a class="contacts__btn btn btn--contacts" id="link-modal">Заказать звонок</a>
+          <a class="contacts__btn btn btn--contacts" href="modal.html" id="link-modal">Заказать звонок</a>
         </div>
       </div>
       <section class="promo">
@@ -55,11 +55,11 @@
         </div>
         <a class="promo__scroll" href="#advantages">Скролл вниз</a>
         <div class="promo__img">
-          <!-- <picture> -->
+          <picture>
             <source srcset="img/circuit-boards-desktop@1x.webp 1x, img/circuit-boards-desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 705px; 2x: 1410px -->
             <img src="img/circuit-boards-desktop@1x.png" srcset="img/circuit-boards-desktop@2x.png" width="705" height="515" alt="Печатная плата.">
-          <!-- </picture> -->
+          </picture>
         </div>
       </section>
     </div>
@@ -137,8 +137,8 @@
                 <source media="(max-width: 767px)" srcset="img/production-mobile@1x.webp 1x, img/production-mobile@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 1023px)" srcset="img/production-tablet@1x.webp 1x, img/production-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/production-desktop@1x.webp 1x, img/production-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 767px)" srcset="img/production-mobile@1x.png 1x, img/img/production-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/production-tablet@1x.png 1x, img/img/production-tablet@2x.png 2x">
+                <source media="(max-width: 767px)" srcset="img/production-mobile@1x.png 1x, img/production-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/production-tablet@1x.png 1x, img/production-tablet@2x.png 2x">
                 <!-- 1х: 370px; 2x: 740px -->
                 <img src="img/production-desktop@1x.png" srcset="img/production-desktop@2x.png" width="370" height="620" alt="Процесс производства печатной платы.">
               </picture>
@@ -151,8 +151,8 @@
                 <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.webp 1x, img/installation-mobile@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 1023px)" srcset="img/installation-tablet@1x.webp 1x, img/installation-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/installation-desktop@1x.webp 1x, img/installation-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.png 1x, img/img/installation-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/installation-tablet@1x.png 1x, img/img/installation-tablet@2x.png 2x">
+                <source media="(max-width: 767px)" srcset="img/installation-mobile@1x.png 1x, img/installation-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/installation-tablet@1x.png 1x, img/installation-tablet@2x.png 2x">
                 <!-- 1х: 370px; 2x: 740px -->
                 <img src="img/installation-desktop@1x.png" srcset="img/installation-desktop@2x.png" width="370" height="620" alt="Процесс монтажа печатной платы.">
               </picture>
@@ -165,8 +165,8 @@
                 <source media="(max-width: 767px)" srcset="img/accessories-mobile@1x.webp 1x, img/accessories-mobile@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 1023px)" srcset="img/accessories-tablet@1x.webp 1x, img/accessories-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/accessories-desktop@1x.webp 1x, img/accessories-desktop@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 767px)" srcset="img/accessories-mobile@1x.png 1x, img/img/accessories-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/accessories-tablet@1x.png 1x, img/img/accessories-tablet@2x.png 2x">
+                <source media="(max-width: 767px)" srcset="img/accessories-mobile@1x.png 1x, img/accessories-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/accessories-tablet@1x.png 1x, img/accessories-tablet@2x.png 2x">
                 <!-- 1х: 370px; 2x: 740px -->
                 <img src="img/production-desktop@1x.png" srcset="img/production-desktop@2x.png" width="370" height="620" alt="Светодиодная лента.">
               </picture>
@@ -199,13 +199,13 @@
             </div>
             <div class="form__input form__input--textarea">
               <label class="visually-hidden" for="feedback-question">Ваш вопрос</label>
-              <textarea name="question" id="feedback-question" placeholder="Ваш вопрос" rows="6" required=""></textarea>
+              <textarea name="question" id="feedback-question" placeholder="Ваш вопрос" rows="6"></textarea>
             </div>
-            <button class="btn btn--feedback" type="submit">Задать вопрос</button>
             <div class="form__checkbox">
               <input class="visually-hidden" type="checkbox" name="personal-data" id="feedback-personal-data" required="" checked="">
               <label for="feedback-personal-data">Я согласен на обработку персональных данных</label>
             </div>
+            <button class="btn btn--feedback" type="submit">Задать вопрос</button>
           </form>
         </div>
       </div>
@@ -285,9 +285,7 @@
           </button>
           <ul>
             <li>
-              <a href="https://www.google.com/maps/dir/?api=1&destination=%D0%B3.%20%D0%9C%D1%8B%D1%82%D0%B8%D1%89%D0%B8%2C%20%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%20%D0%B4.10" target="_blank" rel="noreferrer" aria-label="Адрес нашей компании">
-                г. Мытищи, Олимпийский проспект, д.10
-              </a>
+              г. Мытищи, Олимпийский проспект, д.10
             </li>
             <li>
               <a href="tel:+74955894050" aria-label="Позвонить нам по телефону">
@@ -327,23 +325,23 @@
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="form form--modal" method="post" action="https://echo.htmlacademy.ru">
-        <div class="form__input form__input--name">
+        <div class="form__input form__input--modal form__input--name">
           <label class="visually-hidden" for="modal-name">Ваше имя</label>
           <input type="text" name="name" id="modal-name" placeholder="Имя" required="">
         </div>
-        <div class="form__input form__input--tel">
+        <div class="form__input form__input--modal form__input--tel">
           <label class="visually-hidden" for="modal-phone">Ваш номер телефона</label>
           <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" minlength="14" maxlength="14" required="">
         </div>
-        <div class="form__input form__input--textarea">
+        <div class="form__input form__input--modal form__input--textarea">
           <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
-          <textarea name="question" id="modal-question" placeholder="Ваш вопрос" rows="6" required=""></textarea>
+          <textarea name="question" id="modal-question" placeholder="Ваш вопрос" rows="6"></textarea>
         </div>
-        <button class="btn btn--modal" type="submit">Отправить</button>
-        <div class="form__checkbox">
+        <div class="form__checkbox form__checkbox--modal">
           <input class="visually-hidden" type="checkbox" name="personal-data" id="modal-personal-data" required="" checked="">
           <label for="modal-personal-data">Я согласен на обработку персональных данных</label>
         </div>
+        <button class="btn btn--modal" type="submit">Отправить</button>
       </form>
       <button class="modal__btn-close" type="button" aria-label="Закрыть модальное окно">
         <svg width="17" height="17" viewBox="0 0 17 17" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">

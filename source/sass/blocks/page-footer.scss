@@ -240,6 +240,8 @@
 .page-footer__contacts {
   padding-right: 4px;
 
+  color: $page-footer_text;
+
   @media (max-width: $tablet-width) {
     grid-column-start: 2;
     grid-column-end: 3;

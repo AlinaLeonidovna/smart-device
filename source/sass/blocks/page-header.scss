@@ -37,8 +37,10 @@
 }
 
 .page-header__wrap {
+  position: relative;
   display: flex;
   align-items: center;
+  z-index: 5;
 
   @media (max-width: $tablet-width) {
     padding-left: 11px;

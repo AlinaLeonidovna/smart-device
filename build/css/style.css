@@ -447,7 +447,6 @@ img {
       opacity: 0.5; }
   .btn--modal {
     width: 100%;
-    margin-bottom: 28px;
     padding: 14px 19px; }
     .btn--modal:hover, .btn--modal:focus {
       color: #00b2ff;
@@ -517,12 +516,14 @@ img {
   padding: 0 15px; }
 
 .page-header__wrap {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  z-index: 5; }
   @media (max-width: 1023px) {
     .page-header__wrap {
       padding-left: 11px; } }
@@ -843,8 +844,7 @@ img {
   padding: 40px 43px;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
-  background-color: #ffffff;
-  cursor: pointer; }
+  background-color: #ffffff; }
   @media (max-width: 1023px) {
     .advantages__item {
       min-height: 232px;
@@ -926,7 +926,7 @@ img {
     .about-company img {
       top: -2px;
       left: 1px;
-      width: 240px;
+      width: 243px;
       height: 362px; } }
   @media (max-width: 767px) {
     .about-company img {
@@ -1217,7 +1217,8 @@ img {
       grid-template-columns: 1fr;
       row-gap: 30px; } }
   .form--modal {
-    display: block; }
+    grid-template-columns: 1fr;
+    row-gap: 30px; }
 
 .form__input--textarea {
   grid-column-start: 1;
@@ -1226,8 +1227,9 @@ img {
     .form__input--textarea {
       grid-column-end: 2; } }
 
-.form--modal .form__input {
-  margin-bottom: 30px; }
+.form--modal .form__input--modal {
+  grid-column-start: 1;
+  grid-column-end: 2; }
 
 .form--modal .form__input--textarea {
   display: -webkit-box;
@@ -1245,6 +1247,7 @@ img {
   line-height: 22px;
   color: #ffffff;
   border: none;
+  border-radius: 0;
   background-color: rgba(255, 255, 255, 0.1);
   outline: none;
   resize: none; }
@@ -1290,6 +1293,9 @@ img {
     height: 105px; }
 
 .form__checkbox {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   padding-top: 6px;
   padding-left: 10px;
   font-size: 14px;
@@ -1299,7 +1305,10 @@ img {
     .form__checkbox {
       padding: 0; } }
   .form--modal .form__checkbox {
-    padding-left: 0; }
+    padding-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
 
 .form__checkbox label {
   position: relative;
@@ -1538,7 +1547,8 @@ img {
     color: rgba(27, 45, 55, 0.3); }
 
 .page-footer__contacts {
-  padding-right: 4px; }
+  padding-right: 4px;
+  color: rgba(27, 45, 55, 0.5); }
   @media (max-width: 1023px) {
     .page-footer__contacts {
       grid-column-start: 2;
@@ -1734,6 +1744,8 @@ img {
   .modal--open {
     display: block;
     overflow-y: auto; }
+  .page--inner .modal--open {
+    background-color: #ffffff; }
 
 .modal__content {
   position: absolute;
