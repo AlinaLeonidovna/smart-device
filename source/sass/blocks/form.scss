@@ -148,18 +148,10 @@
   border: 1px solid $form_checkbox-border;
 }
 
-.form__checkbox input:checked + label::after {
-  @include pseudo();
-
-  top: 6px;
-  left: 4px;
-
-  width: 8px;
-  height: 5px;
-
+.form__checkbox input:checked + label::before {
   background-image: url("../../img/icon-check.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 3px 4px;
 }
 
 .form__checkbox input:hover + label::before,

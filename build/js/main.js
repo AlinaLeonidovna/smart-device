@@ -118,45 +118,52 @@
   }
 })();
 
+/* eslint-disable no-new */
 "use strict";
 
 (() => {
-  const modal = document.querySelector(`.modal`);
-  const modalTel = modal.querySelector(`#modal-phone`);
   const feedback = document.querySelector(`.feedback`);
-  const feedbackTel = feedback.querySelector(`#feedback-phone`);
-  const lastLength = 2;
-  const PHONE = {
-    template: /^\+7\([0-9]{3}\)[0-9]{7}/,
-    format: `Пример: +7(9xx)xxxxxxx`
+  const modal = document.querySelector(`#modal`);
+
+  const maskOptions = {
+    mask: `+{7}(000)000-00-00`,
   };
 
-  const inputTelHandler = (evt) => {
-    evt.currentTarget.addEventListener(`keypress`, function (e) {
-      if (!/\d/.test(e.key)) {
-        e.preventDefault();
+  const onInputFocus = (input) => {
+    input.addEventListener(`focus`, () => {
+      if (input.value === ``) {
+        input.value = `+7(`;
       }
     });
-    if (evt.currentTarget.value.length === 0) {
-      evt.currentTarget.value = `+7(`;
-    } else if (evt.currentTarget.value.length === 6) {
-      evt.currentTarget.value = evt.currentTarget.value + `)`;
-    } else if (lastLength === 8 && evt.currentTarget.value.length === 7) {
-      evt.currentTarget.value = evt.currentTarget.value.slice(0, -1);
-    }
-
-    if (!PHONE.template.test(evt.currentTarget.value)) {
-      evt.currentTarget.setCustomValidity(PHONE.format);
-    } else {
-      evt.currentTarget.setCustomValidity(``);
-    }
-    lastLength = evt.currentTarget.value.length;
   };
 
-  modalTel.addEventListener(`input`, inputTelHandler);
-  modalTel.addEventListener(`focus`, inputTelHandler);
-  feedbackTel.addEventListener(`input`, inputTelHandler);
-  feedbackTel.addEventListener(`focus`, inputTelHandler);
+  const onInputBlur = (input) => {
+    input.addEventListener(``, () => {
+      if ((input.value === `+7(`) || (input.value === ``)) {
+        input.value = ``;
+      }
+    });
+  };
+
+  if (feedback) {
+    const feedbackTel = feedback.querySelector(`#feedback-phone`);
+
+    // eslint-disable-next-line
+    new IMask(feedbackTel, maskOptions);
+
+    onInputFocus(feedbackTel);
+    onInputBlur(feedbackTel);
+  }
+
+  if (modal) {
+    const modalTel = modal.querySelector(`#modal-phone`);
+
+    // eslint-disable-next-line
+    new IMask(modalTel, maskOptions);
+
+    onInputFocus(modalTel);
+    onInputBlur(modalTel);
+  }
 })();
 
 "use strict";
