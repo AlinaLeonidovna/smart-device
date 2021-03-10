@@ -779,7 +779,7 @@ img {
     right: 124px;
     width: 611px;
     height: 487px;
-    background-image: url("../../img/icon-polygon.svg");
+    background-image: url("../../img/polygon.svg");
     background-repeat: no-repeat;
     background-position: center; }
     @media (max-width: 1023px) {
@@ -1314,11 +1314,7 @@ img {
   position: relative;
   display: block;
   padding-left: 34px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+  cursor: pointer; }
   .form--modal .form__checkbox label {
     max-width: 90%;
     padding-left: 48px; }
@@ -1333,7 +1329,7 @@ img {
   border: 1px solid #ffffff; }
 
 .form__checkbox input:checked + label::before {
-  background-image: url("../../img/icon-check.svg");
+  background-image: url("../../img/check.svg");
   background-repeat: no-repeat;
   background-position: 3px 4px; }
 

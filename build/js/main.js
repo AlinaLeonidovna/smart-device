@@ -118,7 +118,6 @@
   }
 })();
 
-/* eslint-disable no-new */
 "use strict";
 
 (() => {

@@ -128,7 +128,6 @@
   padding-left: 34px;
 
   cursor: pointer;
-  user-select: none;
 
   .form--modal & {
     max-width: 90%;
@@ -149,7 +148,7 @@
 }
 
 .form__checkbox input:checked + label::before {
-  background-image: url("../../img/icon-check.svg");
+  background-image: url("../../img/check.svg");
   background-repeat: no-repeat;
   background-position: 3px 4px;
 }
