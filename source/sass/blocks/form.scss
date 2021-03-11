@@ -121,6 +121,12 @@
   }
 }
 
+.form__checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
 .form__checkbox label {
   position: relative;
 
