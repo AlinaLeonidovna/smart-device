@@ -779,7 +779,7 @@ img {
     right: 124px;
     width: 611px;
     height: 487px;
-    background-image: url("../../img/polygon.svg");
+    background-image: url("../img/polygon.svg");
     background-repeat: no-repeat;
     background-position: center; }
     @media (max-width: 1023px) {
@@ -1111,7 +1111,7 @@ img {
     right: 0;
     width: 364px;
     height: 670px;
-    background-image: url("../../img/icon-bg-feedback-desktop.svg");
+    background-image: url("../img/icon-bg-feedback-desktop.svg");
     background-repeat: no-repeat;
     background-position: center; }
     @media (max-width: 1023px) {
@@ -1140,7 +1140,7 @@ img {
     left: -1205px;
     width: 1920px;
     height: 881px;
-    background-image: url("../../img/icon-triangles.svg");
+    background-image: url("../img/icon-triangles.svg");
     background-repeat: no-repeat;
     background-position: center; }
     @media (max-width: 1023px) {
@@ -1334,7 +1334,7 @@ img {
   border: 1px solid #ffffff; }
 
 .form__checkbox input:checked + label::before {
-  background-image: url("../../img/check.svg");
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: 3px 4px; }
 
